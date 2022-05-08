@@ -57,9 +57,9 @@ def sendEmail():
     """
     msg = MIMEMultipart()
     msg['Subject'] = f'Relatório de vendas {data}' #TÍTULO DO EMAIL
-    msg['From'] = f'botsuplementosvirtuais@gmail.com' #DE
-    msg['To'] = 'suplementosvirtuais@gmail.com' #PARA
-    password = 'suplementosvirtuais2022' #SENHA DO E-MAIL 
+    msg['From'] = f'' #DE
+    msg['To'] = '' #PARA
+    password = '' #SENHA DO E-MAIL 
 
 
     #ANEXO
