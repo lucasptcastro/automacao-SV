@@ -1,12 +1,15 @@
+from colorama import Fore, Back, Style, init
+from time import sleep
+
+
 def cab(txt):
-    print('\033[1;37m=\033[m'*50)
-    print(f'\033[1;37m|\033[m\033[1;37;41m{txt:^48}\033[m\033[1;37m|\033[m')
-    print('\033[1;37m=\033[m'*50)
+    init(autoreset=True)
+    print(f'{Fore.WHITE + "="}' *50)
+    print(f'{Fore.WHITE+Style.DIM+"|"}{Back.RED+Fore.WHITE+Style.BRIGHT+txt.center(48)}{Back.RESET+Fore.WHITE+Style.DIM+"|"}')
+    print(f'{Fore.WHITE + "="}' *50)
 
 def espace():
     print(' ')
 
-
 def msg(txt):
     print(txt)
-
